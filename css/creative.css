@@ -89,6 +89,11 @@ display: flex;
 justify-content: center;
 }
 
+.button-positioning{
+  display: flex;
+  justify-content: space-evenly
+}
+
 .speech-bubble {
   display: flex;
   justify-content: center;
