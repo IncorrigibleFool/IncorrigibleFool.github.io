@@ -10847,7 +10847,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/bg-masthead.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 86, 92, 0.45)), to(rgba(66, 86, 92, 0.45))), url("../img/bg-masthead.png");
   background: linear-gradient(to bottom, rgba(66, 86, 92, 0.45) 0%, rgba(66, 86, 92, 0.45) 100%), url("../img/bg-masthead.png");
   /* background: url("../img/bg-masthead.jpg"); */
   background-position: center;
