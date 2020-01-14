@@ -1,7 +1,9 @@
 var slideIndex = 1;
 var slideIndex2 = 1;
+var slideIndex3 = 1;
 showSlides(slideIndex);
-showSlides2(slideIndex2)
+showSlides2(slideIndex2);
+showSlides3(slideIndex3);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -12,6 +14,10 @@ function plusSlides2(n) {
   showSlides2(slideIndex2 += n);
 }
 
+function plusSlides3(n){
+  showSlides3(slideIndex3 += n)
+}
+
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
@@ -19,6 +25,10 @@ function currentSlide(n) {
 
 function currentSlide2(n) {
   showSlides2(slideIndex2 = n);
+}
+
+function currentSlide3(n) {
+  showSlides3(slideIndex3 = n);
 }
 
 function showSlides(n) {
@@ -51,4 +61,20 @@ function showSlides2(n) {
   }
   slides[slideIndex2-1].style.display = "block"; 
   dots[slideIndex2-1].className += " dot-active";
+}
+
+function showSlides3(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides3");
+  var dots = document.getElementsByClassName("dot3");
+  if (n > slides.length) {slideIndex3 = 1} 
+  if (n < 1) {slideIndex3 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" dot-active", "");
+  }
+  slides[slideIndex3-1].style.display = "block"; 
+  dots[slideIndex3-1].className += " dot-active";
 }
